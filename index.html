@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form homework</title>
+    </head>
+    <body>
+<form action="https://formspree.io/wowan.nl@gmail.com" method="post">
+    <fieldset>
+        <legend>Your details</legend>
+        <label for="Name">Name</label>
+        <Input type="Text" id="name" name="name" placeholder="Your full name" required><br>
+        Gender
+        <input type="radio" name="gender" Value="Male" required> Male
+        <input type="radio" name="gender" Value="Female" required> Female <br>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" required><br>
+        <label for="birth">Day of birth</label>
+        <input type="date" name="birth" id="birth"><br>
+        Favorite color
+        <input type="color" name="color" id="color"><br>
+        Witch country
+        <select name="Countries">
+            <option value="No">no selection</option>
+            <option value="Ua">Ukraine</option>
+            <option value="Be">Belgium</option>
+            <option value="Nl">Netherland</option>
+            <option value="Us">USA</option>
+            <option value="DE">Deutschladn</option>
+            <option value="Pl">Poland</option>
+        </select>
+   </fieldset>
+
+    <fieldset>
+        <legend>Your indicators</legend>
+        <label for="height">Height:</label>
+        Short<input type="range" min="0" max="100" value="50" name="Height" step="5" id="height" >Tall<br>
+        <label for="salary">Salary:</label>
+        Poor<input type="range" min="0" max="100" name="Salary" step="5" value="50" id="Salary">Rich<br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Yout contact information</legend>
+        <label for="email"> Email: </label>
+        <input type="Email" name="email" id="email" required><br>
+        <label for="mobile">Mobile:</label>
+        <input type="tel" Id="mobile" name="mobile" required><br>
+        <label for="address">Address:</label>
+        <textarea rows="3" cols="60" name="address" id="address"></textarea><br>
+        Method contact you:
+        <input type="checkbox" name="email1" id="email1" value="Email1"> Email
+        <input type="checkbox" name="watsapp" id="watsapp" value="watsapp"> Watsapp
+        <input type="checkbox" name="chat" id="chat" value="In-app-chat"> In-App-Chat<br>
+    </fieldset>
+        <input type="submit" value="Submit">
+
+</form>
+</body>
+</html>
